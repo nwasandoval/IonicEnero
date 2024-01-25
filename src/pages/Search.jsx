@@ -14,7 +14,7 @@ import {
 } from "@ionic/react";
 
 import "./Search.css";
-import { chevronForward,} from "ionicons/icons";
+import { chevronForward, listCircle } from "ionicons/icons";
 
 const Search = () => {
   return (
@@ -44,14 +44,18 @@ const Search = () => {
               <strong>MH01</strong>
               <br />
               <IonNote color="medium" className="ion-text-wrap">
-               Azul | M
+                Azul | M
               </IonNote>
             </IonLabel>
             <div className="metadata-end-wrapper" slot="end">
-              <IonIcon size="large" color="medium" icon={chevronForward}></IonIcon>
+              <IonNote color="medium"></IonNote>
+              <IonIcon
+                size="large"
+                color="medium"
+                icon={chevronForward}
+              ></IonIcon>
             </div>
           </IonItem>
-
 
           <IonItem>
             <IonThumbnail slot="start">

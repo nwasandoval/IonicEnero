@@ -1,18 +1,25 @@
-.eliminar {
-  margin: 20px 18px;
-  color: rgb(40, 139, 179);
-  font-weight: 300;
-}
-
 .linea {
   border: 1px solid #e4e4e4;
 }
 
-.button {
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  text-align: center;
-  margin: 10px 20px;
-  background-color: rgb(200, 200, 207);
+h1 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.ion-text {
+  font-size: 12px;
+}
+
+.iconupload {
+  position: relative;
+  left: 300px;
+  margin-top: 30px;
+}
+
+.ion-button {
+  margin: 0 10px;
 }

@@ -26,8 +26,8 @@ const Search = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-        <IonSearchbar placeholder="Buscar por nombre"></IonSearchbar>
-        <IonContent className="Subtitle">
+        <IonSearchbar className="search" placeholder="Buscar por nombre"></IonSearchbar>
+        <IonContent className="subtitle">
           <h3>Resultados</h3>
 
           <IonItem button={true} detail={false}>
@@ -38,8 +38,8 @@ const Search = () => {
                 src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
               />
             </IonThumbnail>
+
             <IonLabel>
-              
               <IonText className="title-imagen">OSLO - SUDADERA CON CAPUCHA</IonText>
               <br />
               <h2>MH01</h2>

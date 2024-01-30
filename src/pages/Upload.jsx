@@ -9,13 +9,15 @@ import {
   IonToolbar,
   IonIcon,
   IonThumbnail,
-  IonItem,
   IonFabButton,
   IonFab,
+  IonNote,
+  IonAvatar,
 } from "@ionic/react";
 
 import "./Upload.css";
 import {
+  chevronForward,
   cloudUploadOutline,
   colorPaletteOutline,
   resizeOutline,
@@ -31,79 +33,78 @@ const Upload = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-        <IonCard>
-          <IonItem>
-            <br />
-            <IonText>
-              <IonItem button={true} detail={false}>
-                <IonThumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-                  />
-                </IonThumbnail>
+        <IonCard className="title-imagen">
+          <IonAvatar>
+            <img
+              className="imagen"
+              alt="Silhouette of mountains"
+              src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            />
+          </IonAvatar>
+          <IonText className="title-text">
+            DESIREE - CAMISETA DEPORTIVA
+            <h3>WS05</h3>
+          </IonText>
+          <IonButton
+            className="button-card"
+            size="default"
+            color="medium"
+            shape="round"
+          >
+            <IonIcon className="ion-con" icon={colorPaletteOutline}></IonIcon>
+            Negro
+          </IonButton>
 
-                <IonText className="title-imagen">
-                  DESIREE - CAMISETA DEPORTIVA
-                </IonText>
-                <h3>WS05</h3>
-              </IonItem>
-              <br />
+          <IonButton
+            className="button-card"
+            size="default"
+            color="medium"
+            shape="round"
+          >
+            <IonIcon icon={resizeOutline}></IonIcon>M
+          </IonButton>
 
-              <IonButton className="ion-button" color="medium" shape="round">
-                <IonIcon
-                  className="ion-con"
-                  icon={colorPaletteOutline}
-                ></IonIcon>
-                Negro
-              </IonButton>
-              <IonButton color="medium" shape="round">
-                <IonIcon icon={resizeOutline}></IonIcon>M
-              </IonButton>
-            </IonText>
-
-            <IonButton size="default" fill="clear">
-              Eliminar
-            </IonButton>
-          </IonItem>
+          <div className="linea-card"></div>
+          <IonButton size="default" fill="clear">
+            ELIMINAR
+          </IonButton>
         </IonCard>
 
-        <IonCard>
-          <IonItem>
-            <br />
-            <IonText>
-              <IonItem button={true} detail={false}>
-                <IonThumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-                  />
-                </IonThumbnail>
+        <IonCard className="title-imagen">
+          <IonAvatar>
+            <img
+              className="imagen"
+              alt="Silhouette of mountains"
+              src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            />
+          </IonAvatar>
+          <IonText className="title-text">
+            DESIREE - CAMISETA DEPORTIVA
+            <h3>WS05</h3>
+          </IonText>
+          <IonButton
+            className="button-card"
+            size="default"
+            color="medium"
+            shape="round"
+          >
+            <IonIcon className="ion-con" icon={colorPaletteOutline}></IonIcon>
+            Negro
+          </IonButton>
 
-                <IonText className="title-imagen">
-                  GEO - PANTALÓN AISLADO
-                </IonText>
-                <h3>WP01</h3>
-              </IonItem>
-              <br />
+          <IonButton
+            className="button-card"
+            size="default"
+            color="medium"
+            shape="round"
+          >
+            <IonIcon icon={resizeOutline}></IonIcon>M
+          </IonButton>
 
-              <IonButton className="ion-button" color="medium" shape="round">
-                <IonIcon
-                  className="ion-con"
-                  icon={colorPaletteOutline}
-                ></IonIcon>
-                Negro
-              </IonButton>
-              <IonButton color="medium" shape="round">
-                <IonIcon icon={resizeOutline}></IonIcon>M
-              </IonButton>
-            </IonText>
-
-            <div className="linea"></div>
-            <IonButton size="default" fill="clear">
-              Eliminar
-            </IonButton>
-          </IonItem>
+          <div className="linea-card"></div>
+          <IonButton size="default" fill="clear">
+            ELIMINAR
+          </IonButton>
         </IonCard>
 
         <IonFab>

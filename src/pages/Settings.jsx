@@ -7,7 +7,7 @@ const Settings = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Mis datos</IonTitle>
+          <IonTitle>Configuraciones</IonTitle>
         </IonToolbar>
       </IonHeader>
 

@@ -1,25 +1,37 @@
-.linea {
-  border: 1px solid #e4e4e4;
-}
-
-h1 {
-  margin: 10px;
-}
-
-h3 {
-  margin: 10px 0;
-}
-
 .ion-text {
   font-size: 12px;
 }
 
 .iconupload {
   position: relative;
-  left: 300px;
-  margin-top: 30px;
+  margin: 100px;
+  left: 200px;
 }
 
 .ion-button {
   margin: 0 10px;
+}
+
+.imagen {
+  margin: 20px;
+}
+
+.title-imagen {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-text {
+  margin: 20px auto;
+  color: black;
+}
+
+.button-card {
+  margin: 0 10px;
+}
+
+.linea-card {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid rgb(206, 205, 205);
 }

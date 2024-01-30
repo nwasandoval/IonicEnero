@@ -1,5 +1,10 @@
-h3 {
-    margin: 16px;
+.subtitle h3 {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.search {
+    margin: 10px auto;
 }
 
 .title-imagen {

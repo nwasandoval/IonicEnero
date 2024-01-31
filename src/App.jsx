@@ -1,9 +1,6 @@
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import {
   IonApp,
-  IonButton,
-  IonCard,
-  IonContent,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
@@ -66,7 +63,6 @@ const App = () => (
             <IonIcon aria-hidden="true" icon={cloudUpload} />
             <IonLabel>Subir</IonLabel>
           </IonTabButton>
-
           <IonTabButton tab="settings" href="/settings">
             <IonIcon aria-hidden="true" icon={settings} />
             <IonLabel>Configuraciones</IonLabel>

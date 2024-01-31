@@ -57,7 +57,7 @@ const Upload = () => {
 
           <IonButton
             className="button-card"
-            size="default"
+            size="small"
             color="medium"
             shape="round"
           >
@@ -107,8 +107,8 @@ const Upload = () => {
           </IonButton>
         </IonCard>
 
-        <IonFab>
-          <IonFabButton className="iconupload">
+        <IonFab slot="fixed" vertical="bottom" horizontal="end">
+          <IonFabButton >
             <IonIcon icon={cloudUploadOutline}></IonIcon>
           </IonFabButton>
         </IonFab>

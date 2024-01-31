@@ -3,9 +3,9 @@
 }
 
 .iconupload {
-  position: relative;
-  margin: 100px;
-  left: 200px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
 .ion-button {
@@ -28,6 +28,8 @@
 
 .button-card {
   margin: 0 10px;
+  padding: 4px !important;
+  text-transform: none !important; 
 }
 
 .linea-card {
@@ -35,3 +37,4 @@
   padding: 10px;
   border-bottom: 1px solid rgb(206, 205, 205);
 }
+

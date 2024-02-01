@@ -14,7 +14,8 @@ import {
 } from "@ionic/react";
 
 import "./Search.css";
-import { chevronForward, listCircle } from "ionicons/icons";
+import { chevronForward,} from "ionicons/icons";
+import SearchItem from "../components/SearchItem";
 
 const Search = () => {
   return (
@@ -25,39 +26,12 @@ const Search = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent fullscreen>
         <IonSearchbar className="search" placeholder="Buscar por nombre"></IonSearchbar>
         <IonContent className="subtitle">
           <h3>Resultados</h3>
 
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img 
-                alt="Silhouette of mountains"
-                src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-              />
-            </IonThumbnail>
-
-            <IonLabel>
-              <IonText className="title-imagen">OSLO - SUDADERA CON CAPUCHA</IonText>
-              <br />
-              <h2>MH01</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Azul | M
-              </IonNote>
-            </IonLabel>
-
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
+      <IonContent fullscreen>
+        <SearchItem title={"MH05"} subtitle={"OSLO - SUDADERA CON CAPUCHA"} size={"M"} color={"Azul"}></SearchItem>
 
           <IonItem button={true} detail={false}>
             <div className="unread-indicator-wrapper" slot="start"></div>

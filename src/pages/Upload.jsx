@@ -1,27 +1,19 @@
 import {
-  IonCard,
-  IonText,
-  IonButton,
   IonContent,
   IonHeader,
   IonPage,
   IonTitle,
   IonToolbar,
   IonIcon,
-  IonThumbnail,
   IonFabButton,
   IonFab,
-  IonNote,
-  IonAvatar,
 } from "@ionic/react";
 
 import "./Upload.css";
 import {
-  chevronForward,
   cloudUploadOutline,
-  colorPaletteOutline,
-  resizeOutline,
 } from "ionicons/icons";
+import UploadItem from "../components/UploadItem";
 
 const Upload = () => {
   return (
@@ -33,80 +25,11 @@ const Upload = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-        <IonCard className="title-imagen">
-          <IonAvatar>
-            <img
-              className="imagen"
-              alt="Silhouette of mountains"
-              src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-            />
-          </IonAvatar>
-          <IonText className="title-text">
-            DESIREE - CAMISETA DEPORTIVA
-            <h3>WS05</h3>
-          </IonText>
-          <IonButton
-            className="button-card"
-            size="default"
-            color="medium"
-            shape="round"
-          >
-            <IonIcon className="ion-con" icon={colorPaletteOutline}></IonIcon>
-            Negro
-          </IonButton>
+        <UploadItem title={"WS05"} subtitle={"DESIREE - CAMISETA DEPORTIVA"} size={"M"} color={"Negro"}/>
 
-          <IonButton
-            className="button-card"
-            size="small"
-            color="medium"
-            shape="round"
-          >
-            <IonIcon icon={resizeOutline}></IonIcon>M
-          </IonButton>
-
-          <div className="linea-card"></div>
-          <IonButton size="default" fill="clear">
-            ELIMINAR
-          </IonButton>
-        </IonCard>
-
-        <IonCard className="title-imagen">
-          <IonAvatar>
-            <img
-              className="imagen"
-              alt="Silhouette of mountains"
-              src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-            />
-          </IonAvatar>
-          <IonText className="title-text">
-            DESIREE - CAMISETA DEPORTIVA
-            <h3>WS05</h3>
-          </IonText>
-          <IonButton
-            className="button-card"
-            size="default"
-            color="medium"
-            shape="round"
-          >
-            <IonIcon className="ion-con" icon={colorPaletteOutline}></IonIcon>
-            Negro
-          </IonButton>
-
-          <IonButton
-            className="button-card"
-            size="default"
-            color="medium"
-            shape="round"
-          >
-            <IonIcon icon={resizeOutline}></IonIcon>M
-          </IonButton>
-
-          <div className="linea-card"></div>
-          <IonButton size="default" fill="clear">
-            ELIMINAR
-          </IonButton>
-        </IonCard>
-
+        <UploadItem title={"WS06"} subtitle={"DESIREE - CAMISETA DEPORTIVA"} size={"L"} color={"Azul"}/>
+       
+       
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
           <IonFabButton >
             <IonIcon icon={cloudUploadOutline}></IonIcon>

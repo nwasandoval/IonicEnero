@@ -2,7 +2,6 @@ import {
   IonContent,
   IonHeader,
   IonItem,
-  IonLabel,
   IonPage,
   IonSearchbar,
   IonThumbnail,
@@ -10,11 +9,10 @@ import {
   IonToolbar,
   IonIcon,
   IonNote,
-  IonText,
 } from "@ionic/react";
 
 import "./Search.css";
-import { chevronForward,} from "ionicons/icons";
+import { chevronForward } from "ionicons/icons";
 import SearchItem from "../components/SearchItem";
 
 const Search = () => {
@@ -26,152 +24,63 @@ const Search = () => {
         </IonToolbar>
       </IonHeader>
 
-        <IonSearchbar className="search" placeholder="Buscar por nombre"></IonSearchbar>
-        <IonContent className="subtitle">
-          <h3>Resultados</h3>
+      <IonSearchbar
+        className="search"
+        placeholder="Buscar por nombre"
+      ></IonSearchbar>
+      <IonContent className="subtitle">
+        <h3>Resultados</h3>
 
-      <IonContent fullscreen>
-        <SearchItem title={"MH05"} subtitle={"OSLO - SUDADERA CON CAPUCHA"} size={"M"} color={"Azul"}></SearchItem>
+        <IonContent fullscreen>
+          
+          <SearchItem
+            title={"MH01"}
+            subtitle={"OSLO - SUDADERA CON CAPUCHA"}
+            size={"M"}
+            color={"Azul"}
+          ></SearchItem>
 
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img
-                alt="Silhouette of mountains"
-                src="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-              />
-            </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">OSLO - SUDADERA CON CAPUCHA</IonText>
-              <br />
-              <h2>MH02</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Azul | L
-              </IonNote>
-            </IonLabel>
+          <SearchItem
+            title={"MH02"}
+            subtitle={"OSLO - SUDADERA CON CAPUCHA"}
+            size={"L"}
+            color={"Azul"}
+          ></SearchItem>
 
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
+          <SearchItem
+            title={"RS01"}
+            subtitle={"OSLO - SUDADERA CON CAPUCHA"}
+            size={"S"}
+            color={"Celeste"}
+          ></SearchItem>
 
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img
-                alt="Silhouette of mountains"
-                src="https://images.asos-media.com/products/sudadera-extragrande-azul-pastel-con-capucha-de-asos-design/202000992-1-clearsky?$n_640w$&wid=513&fit=constrain"
-              />
-            </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">OSLO - SUDADERA CON CAPUCHA</IonText>
-              <br />
-              <h2>RS01</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Celeste | S
-              </IonNote>
-            </IonLabel>
+          <SearchItem
+            title={"RS02"}
+            subtitle={"OSLO - SUDADERA CON CAPUCHA"}
+            size={"L"}
+            color={"Celeste"}
+          ></SearchItem>
 
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
+          <SearchItem
+            title={"WP01"}
+            subtitle={"GEO - PANTALÓN AISLADO"}
+            size={"S"}
+            color={"Rosa"}
+          ></SearchItem>
 
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img
-                alt="Silhouette of mountains"
-                src="https://images.asos-media.com/products/sudadera-extragrande-azul-pastel-con-capucha-de-asos-design/202000992-1-clearsky?$n_640w$&wid=513&fit=constrain"
-              />
-            </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">OSLO - SUDADERA CON CAPUCHA</IonText>
-              <br />
-              <h2>RS02</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Celeste | L
-              </IonNote>
-            </IonLabel>
+          <SearchItem
+            title={"WP02"}
+            subtitle={"GEO - PANTALÓN AISLADO"}
+            size={"M"}
+            color={"Rosa"}
+          ></SearchItem>
 
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
-
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img
-                alt="Silhouette of mountains"
-                src="https://static.dafiti.com.ar/p/tommy-hilfiger-2785-551773-1-product.jpg"
-              />
-            </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">GEO - PANTALÓN AISLADO</IonText>
-              <br />
-              <h2>WP01</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Rosa | S
-              </IonNote>
-            </IonLabel>
-
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
-
-          <IonItem button={true} detail={false}>
-            <div className="unread-indicator-wrapper" slot="start"></div>
-            <IonThumbnail slot="start">
-              <img
-                alt="Silhouette of mountains"
-                src="https://static.dafiti.com.ar/p/tommy-hilfiger-2785-551773-1-product.jpg"
-              />
-            </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">GEO - PANTALÓN AISLADO</IonText>
-              <br />
-              <h2>WP02</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                Rosa | M
-              </IonNote>
-            </IonLabel>
-
-            <div className="metadata-end-wrapper" slot="end">
-              <IonNote color="medium"></IonNote>
-              <IonIcon
-                size="large"
-                color="medium"
-                icon={chevronForward}
-              ></IonIcon>
-            </div>
-          </IonItem>
+          <SearchItem
+            title={"MH10"}
+            subtitle={"SUDADERA DE CALLE"}
+            size={"L"}
+            color={"Gris"}
+          ></SearchItem>
 
           <IonItem button={true} detail={false}>
             <div className="unread-indicator-wrapper" slot="start"></div>
@@ -181,15 +90,6 @@ const Search = () => {
                 src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
               />
             </IonThumbnail>
-            <IonLabel>
-              <IonText className="title-imagen">MACH - SUDADERA DE CALLE</IonText>
-              <br />
-              <h2>WP02</h2>
-              <br />
-              <IonNote color="medium" className="ion-text-wrap">
-                GRIS | L
-              </IonNote>
-            </IonLabel>
 
             <div className="metadata-end-wrapper" slot="end">
               <IonNote color="medium"></IonNote>

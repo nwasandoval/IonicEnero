@@ -29,7 +29,6 @@ const Upload = () => {
 
         <UploadItem title={"WS06"} subtitle={"DESIREE - CAMISETA DEPORTIVA"} size={"L"} color={"Azul"}/>
        
-       
         <IonFab slot="fixed" vertical="bottom" horizontal="end">
           <IonFabButton >
             <IonIcon icon={cloudUploadOutline}></IonIcon>

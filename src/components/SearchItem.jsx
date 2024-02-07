@@ -16,7 +16,7 @@ const SearchItem = ({ title, subtitle, image, size, color }) => {
       <IonThumbnail slot="start">
         <img
           alt="Silhouette of mountains"
-          src={`"https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"${image}`}
+          src={image}
         />
       </IonThumbnail>
       <IonLabel>

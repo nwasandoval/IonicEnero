@@ -16,6 +16,15 @@ import { chevronForward } from "ionicons/icons";
 import SearchItem from "../components/SearchItem";
 
 const Search = () => {
+  const item1 = {
+    image: "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg",
+    title: "MH01",
+    subtitle: "OSLO - SUDADERA CON CAPUCHA",
+    size: "M",
+    color: "Azul",
+  }
+
+
   return (
     <IonPage>
       <IonHeader>
@@ -32,15 +41,18 @@ const Search = () => {
         <h3>Resultados</h3>
 
         <IonContent fullscreen>
-          
           <SearchItem
-            title={"MH01"}
-            subtitle={"OSLO - SUDADERA CON CAPUCHA"}
-            size={"M"}
-            color={"Azul"}
+            image={item1.image}
+            title={item1.title}
+            subtitle={item1.subtitle}
+            size={item1.size}
+            color={item1.color}
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"MH02"}
             subtitle={"OSLO - SUDADERA CON CAPUCHA"}
             size={"L"}
@@ -48,6 +60,9 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"RS01"}
             subtitle={"OSLO - SUDADERA CON CAPUCHA"}
             size={"S"}
@@ -55,6 +70,9 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"RS02"}
             subtitle={"OSLO - SUDADERA CON CAPUCHA"}
             size={"L"}
@@ -62,6 +80,9 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"WP01"}
             subtitle={"GEO - PANTALÓN AISLADO"}
             size={"S"}
@@ -69,6 +90,9 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"WP02"}
             subtitle={"GEO - PANTALÓN AISLADO"}
             size={"M"}
@@ -76,6 +100,9 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
+            image={
+              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
+            }
             title={"MH10"}
             subtitle={"SUDADERA DE CALLE"}
             size={"L"}

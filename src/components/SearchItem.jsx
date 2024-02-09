@@ -14,10 +14,7 @@ const SearchItem = ({ title, subtitle, image, size, color }) => {
       <div className="unread-indicator-wrapper" slot="start"></div>
 
       <IonThumbnail slot="start">
-        <img
-          alt="Silhouette of mountains"
-          src={image}
-        />
+        <img alt="Silhouette of mountains" src={image} />
       </IonThumbnail>
       <IonLabel>
         <IonText className="title-imagen">{subtitle}</IonText>
@@ -34,7 +31,6 @@ const SearchItem = ({ title, subtitle, image, size, color }) => {
         <IonIcon size="large" color="medium" icon={chevronForward}></IonIcon>
       </div>
     </IonItem>
-    
   );
 };
 

@@ -17,13 +17,13 @@ import SearchItem from "../components/SearchItem";
 
 const Search = () => {
   const item1 = {
-    image: "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg",
+    image:
+      "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg",
     title: "MH01",
     subtitle: "OSLO - SUDADERA CON CAPUCHA",
     size: "M",
     color: "Azul",
-  }
-
+  };
 
   return (
     <IonPage>

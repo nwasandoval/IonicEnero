@@ -1,8 +1,6 @@
 import {
-  IonButton,
   IonContent,
   IonHeader,
-  IonInput,
   IonPage,
   IonTitle,
   IonToolbar,
@@ -10,19 +8,16 @@ import {
   IonText,
   IonItem,
   IonLabel,
-  IonNote,
   IonToggle,
 } from "@ionic/react";
 
 import "./Settings.css";
 import { useState } from "react";
 import {
-  atCircle,
   bagOutline,
   batteryFull,
   chevronBack,
   filterOutline,
-  listCircle,
   logoDribbble,
   logoGithub,
   logoInstagram,
@@ -30,8 +25,10 @@ import {
   mailOpenOutline,
   person,
 } from "ionicons/icons";
+import SettingsItem from "../components/SettingsItem";
 
 const Settings = () => {
+
   const [name, setName] = useState("");
   const saveUser = () => {
     const elNombreEstaVacio = name === "";
@@ -39,17 +36,25 @@ const Settings = () => {
       alert(`Debe ingresar un nuevo nombre`);
     } else alert(`Se guardara el usuario ${name}`);
   };
+  const item1 = {
+    text: "", 
+    size: "", 
+    color: "", 
+    iconos: "",
+  
+  }
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color="primary">
           <IonText color="light">
-            <span>10:00 AM</span>
+            10:00 AM
           </IonText>
+          <br />
           <IonIcon size="small" icon={chevronBack}></IonIcon>
           <IonIcon slot="start" size="small" icon={filterOutline}></IonIcon>
           <IonText slot="end" color="light">
-            <span>100%</span>
+            100%
             <IonIcon size="large" icon={batteryFull}></IonIcon>
           </IonText>
           <IonTitle slot="start">SETTINGS</IonTitle>
@@ -59,10 +64,19 @@ const Settings = () => {
       {/* Personal Details */}
 
       <IonContent fullscreen>
-        <IonText color="tertiary">
-          <span>Personal Details</span>
+        <SettingsItem 
+        text={item1.text}
+        size={item1.size}
+        color={item1.color}
+        iconos={item1.iconos}>
+        </SettingsItem>
+
+        <IonText className="text-subtitle" color="tertiary">
+          Personal Details
         </IonText>
-        <IonItem button={true}>
+
+
+        <IonItem className="container-item" button={true}>
           <IonIcon
             color="dark"
             slot="start"
@@ -97,11 +111,10 @@ const Settings = () => {
         </IonItem>
 
         {/* Conected Account */}
-
-        <IonText color="tertiary">
-          <span>Conected Account</span>
+        <IonText className="text-subtitle" color="tertiary">
+          Conected Account
         </IonText>
-        <IonItem>
+        <IonItem className="container-item">
           <IonIcon
             color="dark"
             slot="start"

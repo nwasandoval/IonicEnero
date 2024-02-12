@@ -9,6 +9,8 @@ import {
   IonItem,
   IonLabel,
   IonToggle,
+  IonInput,
+  IonButton,
 } from "@ionic/react";
 
 import "./Settings.css";
@@ -175,23 +177,23 @@ const Settings = () => {
             checked={true}
           ></IonToggle>
         </IonItem>
-        {/* <IonInput
+        <IonInput
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
-          fill="solid"
+          onIonInput={(e) => setName(e.target.value)}
+          fill="outline"
           color="success"
           labelPlacement="floating"
           helperText="Enter your name"
-        ></IonInput> */}
-        {/* <br />
+        ></IonInput>
+        <br />
         <IonButton
           size="small"
-          onClick={(e) => saveUser()}
+          onClick={() => saveUser()}
           disabled={name === ""}
         >
           Aceptar
-        </IonButton> */}
+        </IonButton>
       </IonContent>
     </IonPage>
   );

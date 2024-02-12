@@ -50,9 +50,7 @@ const Search = () => {
           ></SearchItem>
 
           <SearchItem
-            image={
-              "https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
-            }
+            image="https://www.motleydenim.es/images/zoom/jackjones_noos2023_4156895_12163777_5.jpg"
             title={"MH02"}
             subtitle={"OSLO - SUDADERA CON CAPUCHA"}
             size={"L"}

@@ -1,17 +1,23 @@
-import { IonIcon, IonItem, IonLabel, IonText } from "@ionic/react";
-import { person } from "ionicons/icons";
+import { IonIcon, IonItem, IonLabel, IonToggle } from "@ionic/react";
+import { logoDribbble, person } from "ionicons/icons";
 
-const SettingsItem = ({ text, size, color, iconos }) => {
+const SocialMediaItem = ({icon, text, value}) => {
   return (
-    <>
-      <IonText className="text-subtitle" color="tertiary">
-        {text}
-      </IonText>
-      {/* <IonItem className="container-item" button={true}>
-        <IonIcon color="dark" slot="start" icon={person} size="large"></IonIcon>
-        <IonLabel>{text}</IonLabel>
-      </IonItem> */}
-    </>
+    <IonItem>
+      <IonIcon
+        color="dark"
+        slot="start"
+        icon={icon}
+        size="large"
+      ></IonIcon>
+      <IonLabel>{text}</IonLabel>
+      <IonToggle
+        slot="end"
+        aria-label="Danger toggle"
+        color="danger"
+        checked={value}
+      ></IonToggle>
+    </IonItem>
   );
 };
-export default SettingsItem;
+export default SocialMediaItem;

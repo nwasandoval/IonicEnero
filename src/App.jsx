@@ -34,6 +34,7 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import ChangeEmailPage from "./pages/ChangeEmail";
 
 setupIonicReact();
 
@@ -51,21 +52,24 @@ const App = () => (
           <Route path="/settings">
             <Settings />
           </Route>
+          <Route path="/ChangeEmailPage">
+            <ChangeEmailPage />
+          </Route>
           
           
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="search" href="/search">
             <IonIcon aria-hidden="true" icon={search} />
-            <IonLabel>Buscar</IonLabel>
+            <IonLabel>Search</IonLabel>
           </IonTabButton>
           <IonTabButton tab="upload" href="/upload">
             <IonIcon aria-hidden="true" icon={cloudUpload} />
-            <IonLabel>Subir</IonLabel>
+            <IonLabel>Upload</IonLabel>
           </IonTabButton>
           <IonTabButton tab="settings" href="/settings">
             <IonIcon aria-hidden="true" icon={settings} />
-            <IonLabel>Configuraciones</IonLabel>
+            <IonLabel>Settings</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

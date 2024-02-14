@@ -27,10 +27,9 @@ import {
   mailOpenOutline,
   person,
 } from "ionicons/icons";
-import SettingsItem from "../components/SettingsItem";
+import SocialMediaItem from "../components/SettingsItem";
 
 const Settings = () => {
-
   const [name, setName] = useState("");
   const saveUser = () => {
     const elNombreEstaVacio = name === "";
@@ -38,27 +37,16 @@ const Settings = () => {
       alert(`Debe ingresar un nuevo nombre`);
     } else alert(`Se guardara el usuario ${name}`);
   };
-  const item1 = {
-    text: "", 
-    size: "", 
-    color: "", 
-    iconos: "",
-  
-  }
+  const twitter = {
+    icon: logoTwitter,
+    text: "TWITTER",
+    value: true,
+  };
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color="primary">
-          <IonText color="light">
-            10:00 AM
-          </IonText>
-          <br />
-          <IonIcon size="small" icon={chevronBack}></IonIcon>
-          <IonIcon slot="start" size="small" icon={filterOutline}></IonIcon>
-          <IonText slot="end" color="light">
-            100%
-            <IonIcon size="large" icon={batteryFull}></IonIcon>
-          </IonText>
           <IonTitle slot="start">SETTINGS</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -66,19 +54,13 @@ const Settings = () => {
       {/* Personal Details */}
 
       <IonContent fullscreen>
-        <SettingsItem 
-        text={item1.text}
-        size={item1.size}
-        color={item1.color}
-        iconos={item1.iconos}>
-        </SettingsItem>
+        <IonItem>
+          <IonText className="text-subtitle" color="tertiary">
+            Personal Details
+          </IonText>
+        </IonItem>
 
-        <IonText className="text-subtitle" color="tertiary">
-          Personal Details
-        </IonText>
-
-
-        <IonItem className="container-item" button={true}>
+        <IonItem href="/ChangeEmailPage" className="container-item" button={true}>
           <IonIcon
             color="dark"
             slot="start"
@@ -113,24 +95,18 @@ const Settings = () => {
         </IonItem>
 
         {/* Conected Account */}
-        <IonText className="text-subtitle" color="tertiary">
-          Conected Account
-        </IonText>
-        <IonItem className="container-item">
-          <IonIcon
-            color="dark"
-            slot="start"
-            icon={logoTwitter}
-            size="large"
-          ></IonIcon>
-          <IonLabel>TWITTER</IonLabel>
-          <IonToggle
-            slot="end"
-            aria-label="Danger toggle"
-            color="danger"
-            checked={true}
-          ></IonToggle>
+        <IonItem>
+          <IonText className="text-subtitle" color="tertiary">
+            Conected Account
+          </IonText>
         </IonItem>
+
+        <SocialMediaItem
+          icon={twitter.icon}
+          text={twitter.text}
+          value={twitter.value}
+        ></SocialMediaItem>
+
         <IonItem>
           <IonIcon
             color="dark"
@@ -177,23 +153,6 @@ const Settings = () => {
             checked={true}
           ></IonToggle>
         </IonItem>
-        <IonInput
-          type="text"
-          value={name}
-          onIonInput={(e) => setName(e.target.value)}
-          fill="outline"
-          color="success"
-          labelPlacement="floating"
-          helperText="Enter your name"
-        ></IonInput>
-        <br />
-        <IonButton
-          size="small"
-          onClick={() => saveUser()}
-          disabled={name === ""}
-        >
-          Aceptar
-        </IonButton>
       </IonContent>
     </IonPage>
   );
